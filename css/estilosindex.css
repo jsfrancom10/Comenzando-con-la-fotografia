@@ -1,0 +1,115 @@
+body{
+  font-family:"Dancing Script",cursive ;
+  background-color: #02010a;
+}
+#cabecera
+{
+  background-color: #5b7989;
+  padding: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  text-shadow:0 0 2px #02010a;
+  color: white;
+  align-items: baseline;
+}
+#cabecera h2{
+  width: 100%;
+  margin-left: 10px;
+}
+#menu-principal{
+  text-align: right;
+  width: 90%;
+}
+#menu-principal > a{
+  color:white;
+  text-decoration: none;
+  font-size: 1em;
+  margin:10px;
+}
+#central
+{
+  background-color:#82c3a6;
+  text-align: center;
+  margin: 0px;
+  padding: 3px;
+}
+#central img{
+  box-shadow: 2px 2px #02010a;
+  margin: 15px;
+}
+#secundaria
+{
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+  border: 1px;
+  padding: 3px;
+}
+#secundaria > div{
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+#secundaria >div >img{
+  box-shadow: 2px 2px #82c3a6;
+}
+#pie-pagina{
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3px;
+  display: flex;
+  width: 100%;
+}
+#pie-pagina div{
+  margin: 15px;
+  text-align: center;
+}
+@media (max-width:900px)
+{
+  #pie-pagina{
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto, .terminos, .redes, .derechos{
+    width: 100%;
+  }
+  #secundaria{
+    display: flex;
+    flex-direction: column;
+  }
+  .paisaje, .retrato{
+    width: 100%;
+    background-color: black;
+  }
+  #secundaria div{
+    width: 90%;
+  }
+  #cabecera{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #menu-principal{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width:901px)
+{
+  #secundaria div{
+    width: 70%;
+  }
+}
+#container{
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+
+}
+#cabecera, #central, #secundaria, #pie-pagina {
+  width: 100%;
+}
